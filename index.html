@@ -3,36 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather & Crop Info</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Farmer Help Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Weather & Crop Information</h1>
-        <p>Stay informed about the weather and get the best crop advice!</p>
-        <img src="images/weather-banner.jpg" alt="Weather Banner" class="banner-image">
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Gramin Krishi Mausam Sewa</h1>
+            <p>Empowering Farmers with Weather Insights and Crop Support</p>
+            <a href="#services" class="btn-primary">Explore Services</a>
+        </div>
     </header>
 
-    <main>
-        <section id="weather">
-            <h2>Current Weather</h2>
-            <img src="images/weather-icon.png" alt="Weather Icon" id="weather-image">
-            <div id="weather-info">
-                <p>Loading weather data...</p>
-            </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section id="welcome">
+            <h2>Welcome to Farmer Help Portal</h2>
+            <p>We provide essential resources, tools, and support for farmers. Discover services, resources, and helpful tips to improve your farming practices.</p>
         </section>
 
-        <section id="crop-advice">
-            <h2>Crop Recommendations</h2>
-            <img src="images/crops.jpg" alt="Crops" class="section-image">
-            <textarea id="crop-text" rows="6" placeholder="Enter crop recommendations here..."></textarea>
-            <button id="save-button">Save</button>
-            <div id="saved-data"></div>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <i class="fas fa-cloud-sun fa-3x"></i>
+                    <h3>Weather Updates</h3>
+                    <p>Stay informed with accurate weather forecasts to plan your farming activities effectively.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-leaf fa-3x"></i>
+                    <h3>Crop Recommendations</h3>
+                    <p>Get personalized crop suggestions based on your region and soil type.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tractor fa-3x"></i>
+                    <h3>Farming Techniques</h3>
+                    <p>Learn modern and sustainable farming methods to maximize your yield.</p>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Weather & Crop Info</p>
+        <div class="footer-content">
+            <div>
+                <img src="https://csauk.ac.in/wp-content/themes/chandra/images/logo.png" alt="CSA University Logo">
+                <p>Chandra Shekhar Azad University of Agriculture & Technology, Kanpur</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Farmer Help Portal. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
